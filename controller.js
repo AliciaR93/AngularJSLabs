@@ -11,10 +11,10 @@
     vm.addItem = function(item) {
       vm.todoList.push(item);
       document.getElementById("addToDo").value = "";
-      vm.removeItem = function(index){
-      vm.todoList.splice(index, 1)
-    };
     }
+    vm.removeItem = function(index){
+    vm.todoList.splice(index, 1)
+  };
   }
   // (function() {
   //   function xbtn() {
