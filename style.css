@@ -7,11 +7,11 @@ body {
   background-color: white;
   text-align: center;
   width: 375px;
-  min-height: 450px;
   margin: 0 auto;
   margin-top: 100px;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   border-radius: 5px;
+  padding: 20px;
 }
 .titleOfPage {
   text-align: left;
@@ -31,29 +31,35 @@ body {
   border-radius: 10px;
   color: white;
   margin-top: 20px;
+  display: block;
 }
 .filteringTodos {
-  width: 350px;
+  /* width: 350px; */
   height: 32px;
   border-radius: 5px;
+  font-size: 16px;
+  width: 85%;
 }
-#addToDo {
-  width: 350px;
+#todo-list {
+  /* width: 350px; */
   height: 32px;
   border-radius: 5px;
+  font-size: 16px;
+  width: 85%;
 }
 li  {
   text-align: left;
   margin-left: 25px;
+  position: relative;
 }
 #xbtn:hover {
 border-style: none;
 background-color: red;
 color: black;
 }
-#xbtn {
-  float:right;
-  margin-right: 5px;
+.material-icons {
+  position: absolute;
+  right: 10%;
   border-style: none;
   background-color: white;
 }

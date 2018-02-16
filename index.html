@@ -12,23 +12,17 @@
 </head>
 
 <body ng-app="app">
-  <div ng-controller="FormController as form">
-    <div class="formOfPage">
-    <h1 class="titleOfPage">TODO List</h1>
-    <p class="whatToStore">A place to store the things you have to do!</p>
-    <form ng-submit="form.addItem(form.item)">
-    <input class="filteringTodos" type="text" placeholder=" Filter your to-dos" ng-model="todoFilter" />
-    <ol class="list">
-      <li ng-repeat="item in form.todoList | filter: todoFilter track by $index">{{item}}<button id="xbtn" ng-click="form.removeItem()">X</button></li>
-    </ol>
-    <input id="addToDo" type="text" placeholder=" Add your to-do" ng-model="form.item" />
-    <button class="addButton" type="submit">Add</button>
-  </form>
-</div>
-  </div>
+
+  <task-form></task-form>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
   <script src="app.js"></script>
-  <script src="controller.js"></script>
+  <script src="controllers/controller.js"></script>
+  <script src="components/taskForm.js"></script>
+  <script src="components/taskList.js"></script>
+  <script src="directives/hoverState.js"></script>
+  <script src="form-service.js"></script>
 </body>
 
 </html>
