@@ -3,7 +3,7 @@
     templateUrl: "templates/taskForm.html",
 
     controller: function(TodoService) {
-      // var vm = this;
+      var vm = this;
       vm.todoList = function(item) {
         TodoService.getData(item);
       };
