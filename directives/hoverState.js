@@ -3,12 +3,12 @@
     return {
       link: function($scope, $element, $attrs) {
         $element.on("mouseover", function () {
-        $element.css("background-color", '#bbb');
-      })
+        $element.css("color", '#bbb');
+      });
 
       $element.on("mouseout", function() {
-        $element.css("background-color", 'white');
-      })
+        $element.css("color", 'black');
+      });
     }
   }
   }

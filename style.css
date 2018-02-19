@@ -57,9 +57,15 @@ border-style: none;
 background-color: red;
 color: black;
 }
-.material-icons {
+.icon1 {
   position: absolute;
   right: 10%;
   border-style: none;
   background-color: white;
+}
+.enterButton {
+  color: #ff69b4;
+  text-decoration: none;
+  position: relative;
+  left: 150px;
 }
